@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edgy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+
+<body>
+    <div class="header">
+        <header> <h1>IMC Calculator</h1></header>
+    </div>
+    <div class="container">
+        <div class="label">
+        <br><label>Altura (em m)</label><br>
+        <input type="text" placeholder="Metros" id="resultHeight">
+        <br><label>Peso (em kg)</label><br>
+        <input type="text" placeholder="Kilos" id="resultWeight">
+        <br><br> <button type= "button"  onclick= "Calc()" value= "result" id="result">Calcular</button>
+        <br><br> <button type= "button" onclick= "clean()" value= "limpar" id="clean">Limpar</button>
+        <br><br> <label> <h3>Resultado</h3></label><br>
+        <p id="resultImput"></p>
+        <br><br><br><br>
+        </div>
+
+        
+
+        <table>
+            <tr>
+                <th>IMC</th>
+                <th>CLASSIFICAÇÃO</th>
+                <th>OBESIDADE</th>
+            </tr>
+            <tr>
+                <td>MENOR QUE 18.5</td>
+                <td>MAGREZA</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>ENTRE 18.5 E 24.9</td>
+                <td>NORMAL</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>ENTRE 25 E 29.9</td>
+                <td>SOBREPESO</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>ENTRE 30 E 39.9</td>
+                <td>OBESIDADE</td>
+                <td>II</td>
+            </tr>
+                <td>MAIOR QUE 40</td>
+                <td>OBESIDADE MORBIDA</td>
+                <td>III</td>
+            </tr>
+        </table> 
+        
+    </div>
+   
+    <div class="footer">
+    <footer>
+        <ul>
+            <li> FIESC SENAI - Florianópolis</li>
+            <li> Federico Luís Calloni, 2022</li>
+            <li> Github: FredCalloni </li>
+            <li> Não faço a mínima ideia do que estou fazendo mas me passa de ano pfv s2  </li>
+        </ul>
+    </footer>
+    </div>
+ 
+ </body>
+    <script src="./script.js"></script>
+</body>
